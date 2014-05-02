@@ -10,7 +10,9 @@ namespace Nulocks {
                         int _score;
                         int _status;
                         int _winpower;
+                        int _size;
                         void startNextTurn();
+                        void startFirstTurn();
                 public:
                         Board(int size=4, int winpower=11);
                         ~Board();
@@ -21,9 +23,11 @@ namespace Nulocks {
                         void moveRight();
                         bool gameInProgress();
                         bool gameWon();
-                        bool gameFailed();
+                        bool gameLost();
                         int getScore();
                         int getWinPower();
+                        int getSize();
+                        void getRepresentation(int*** repr);
                 };
         }
 }

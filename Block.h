@@ -13,7 +13,11 @@ namespace Nulocks {
                         void unsetMoved();
                         bool wasMoved();
                         int getValue();
+                        int getLevel();
                         void levelUp();
+                        void empty();
+                        bool isEmpty();
+                        void setLevel(int level);
                 };
         }
 }
