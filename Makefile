@@ -9,7 +9,7 @@ debug:
 clean:
 	rm -rf libnulockscore.so.* *.o
 install:
-	mv libnulockscore.so.0.1 ${LIBPREFIX}
+	cp -f libnulockscore.so.0.1 ${LIBPREFIX}
 	ln -sf ${LIBPREFIX}/libnulockscore.so.0.1 ${LIBPREFIX}/libnulockscore.so.0
 	ln -sf ${LIBPREFIX}/libnulockscore.so.0.1 ${LIBPREFIX}/libnulockscore.so
 	mkdir -p ${INCLUDEPREFIX}/nulocks-core

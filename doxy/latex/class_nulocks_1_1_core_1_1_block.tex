@@ -1,0 +1,127 @@
+\hypertarget{class_nulocks_1_1_core_1_1_block}{\section{Nulocks\-:\-:Core\-:\-:Block Class Reference}
+\label{class_nulocks_1_1_core_1_1_block}\index{Nulocks\-::\-Core\-::\-Block@{Nulocks\-::\-Core\-::\-Block}}
+}
+
+
+A class representing a block on the game board.  
+
+
+
+
+{\ttfamily \#include $<$Block.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_nulocks_1_1_core_1_1_block_a3f37123bfcbce5c7d034f2a8912b9d36}{\hyperlink{class_nulocks_1_1_core_1_1_block_a3f37123bfcbce5c7d034f2a8912b9d36}{Block} ()}\label{class_nulocks_1_1_core_1_1_block_a3f37123bfcbce5c7d034f2a8912b9d36}
+
+\begin{DoxyCompactList}\small\item\em Construct an empty block. \end{DoxyCompactList}\item 
+\hypertarget{class_nulocks_1_1_core_1_1_block_adb19f6f00db0de23bb87297a78eed85b}{\hyperlink{class_nulocks_1_1_core_1_1_block_adb19f6f00db0de23bb87297a78eed85b}{$\sim$\-Block} ()}\label{class_nulocks_1_1_core_1_1_block_adb19f6f00db0de23bb87297a78eed85b}
+
+\begin{DoxyCompactList}\small\item\em Destroy the block. \end{DoxyCompactList}\item 
+\hypertarget{class_nulocks_1_1_core_1_1_block_af14aacc817ba8215f75697a83ec4d56c}{void \hyperlink{class_nulocks_1_1_core_1_1_block_af14aacc817ba8215f75697a83ec4d56c}{set\-Moved} ()}\label{class_nulocks_1_1_core_1_1_block_af14aacc817ba8215f75697a83ec4d56c}
+
+\begin{DoxyCompactList}\small\item\em Indicate the block as moved this turn. \end{DoxyCompactList}\item 
+\hypertarget{class_nulocks_1_1_core_1_1_block_af647341409a4b1bc0c2b88356a40b5c6}{void \hyperlink{class_nulocks_1_1_core_1_1_block_af647341409a4b1bc0c2b88356a40b5c6}{unset\-Moved} ()}\label{class_nulocks_1_1_core_1_1_block_af647341409a4b1bc0c2b88356a40b5c6}
+
+\begin{DoxyCompactList}\small\item\em Indicate the block as not moved this turn. \end{DoxyCompactList}\item 
+bool \hyperlink{class_nulocks_1_1_core_1_1_block_a5c1d270d8bca8d1c0ca67ef950086f32}{was\-Moved} ()
+\begin{DoxyCompactList}\small\item\em Check if the block was moved this turn. \end{DoxyCompactList}\item 
+int \hyperlink{class_nulocks_1_1_core_1_1_block_a989dc6c96dde5da694fcdbb936cffee0}{get\-Value} ()
+\begin{DoxyCompactList}\small\item\em Get block value. \end{DoxyCompactList}\item 
+int \hyperlink{class_nulocks_1_1_core_1_1_block_ad60ea0ef64de5e639afc25d7c17f2f30}{get\-Level} ()
+\begin{DoxyCompactList}\small\item\em Get block level. \end{DoxyCompactList}\item 
+\hypertarget{class_nulocks_1_1_core_1_1_block_ad7aad0498de7491795c8be1d18c18a56}{void \hyperlink{class_nulocks_1_1_core_1_1_block_ad7aad0498de7491795c8be1d18c18a56}{level\-Up} ()}\label{class_nulocks_1_1_core_1_1_block_ad7aad0498de7491795c8be1d18c18a56}
+
+\begin{DoxyCompactList}\small\item\em Increase level of the block. \end{DoxyCompactList}\item 
+\hypertarget{class_nulocks_1_1_core_1_1_block_a3a6aa3d4002605f9d0fd1e51dbe0e0c8}{void \hyperlink{class_nulocks_1_1_core_1_1_block_a3a6aa3d4002605f9d0fd1e51dbe0e0c8}{empty} ()}\label{class_nulocks_1_1_core_1_1_block_a3a6aa3d4002605f9d0fd1e51dbe0e0c8}
+
+\begin{DoxyCompactList}\small\item\em Make the block empty. \end{DoxyCompactList}\item 
+bool \hyperlink{class_nulocks_1_1_core_1_1_block_ab366a04c5fd4163b5e8bc90a48bf240d}{is\-Empty} ()
+\begin{DoxyCompactList}\small\item\em Check if the block is empty. \end{DoxyCompactList}\item 
+void \hyperlink{class_nulocks_1_1_core_1_1_block_ae91c1731e6b60af9adeff1e7c58a17ef}{set\-Level} (int level)
+\begin{DoxyCompactList}\small\item\em Set level of the block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class representing a block on the game board. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_nulocks_1_1_core_1_1_block_ad60ea0ef64de5e639afc25d7c17f2f30}{\index{Nulocks\-::\-Core\-::\-Block@{Nulocks\-::\-Core\-::\-Block}!get\-Level@{get\-Level}}
+\index{get\-Level@{get\-Level}!Nulocks::Core::Block@{Nulocks\-::\-Core\-::\-Block}}
+\subsubsection[{get\-Level}]{\setlength{\rightskip}{0pt plus 5cm}int Nulocks\-::\-Core\-::\-Block\-::get\-Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_block_ad60ea0ef64de5e639afc25d7c17f2f30}
+
+
+Get block level. 
+
+\begin{DoxyReturn}{Returns}
+Level of the block. 
+\end{DoxyReturn}
+\hypertarget{class_nulocks_1_1_core_1_1_block_a989dc6c96dde5da694fcdbb936cffee0}{\index{Nulocks\-::\-Core\-::\-Block@{Nulocks\-::\-Core\-::\-Block}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!Nulocks::Core::Block@{Nulocks\-::\-Core\-::\-Block}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int Nulocks\-::\-Core\-::\-Block\-::get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_block_a989dc6c96dde5da694fcdbb936cffee0}
+
+
+Get block value. 
+
+\begin{DoxyReturn}{Returns}
+Value of the block. 
+\end{DoxyReturn}
+\hypertarget{class_nulocks_1_1_core_1_1_block_ab366a04c5fd4163b5e8bc90a48bf240d}{\index{Nulocks\-::\-Core\-::\-Block@{Nulocks\-::\-Core\-::\-Block}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!Nulocks::Core::Block@{Nulocks\-::\-Core\-::\-Block}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Nulocks\-::\-Core\-::\-Block\-::is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_block_ab366a04c5fd4163b5e8bc90a48bf240d}
+
+
+Check if the block is empty. 
+
+\begin{DoxyReturn}{Returns}
+True if the block is empty, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_nulocks_1_1_core_1_1_block_ae91c1731e6b60af9adeff1e7c58a17ef}{\index{Nulocks\-::\-Core\-::\-Block@{Nulocks\-::\-Core\-::\-Block}!set\-Level@{set\-Level}}
+\index{set\-Level@{set\-Level}!Nulocks::Core::Block@{Nulocks\-::\-Core\-::\-Block}}
+\subsubsection[{set\-Level}]{\setlength{\rightskip}{0pt plus 5cm}void Nulocks\-::\-Core\-::\-Block\-::set\-Level (
+\begin{DoxyParamCaption}
+\item[{int}]{level}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_block_ae91c1731e6b60af9adeff1e7c58a17ef}
+
+
+Set level of the block. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Level of the block. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_nulocks_1_1_core_1_1_block_a5c1d270d8bca8d1c0ca67ef950086f32}{\index{Nulocks\-::\-Core\-::\-Block@{Nulocks\-::\-Core\-::\-Block}!was\-Moved@{was\-Moved}}
+\index{was\-Moved@{was\-Moved}!Nulocks::Core::Block@{Nulocks\-::\-Core\-::\-Block}}
+\subsubsection[{was\-Moved}]{\setlength{\rightskip}{0pt plus 5cm}bool Nulocks\-::\-Core\-::\-Block\-::was\-Moved (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_block_a5c1d270d8bca8d1c0ca67ef950086f32}
+
+
+Check if the block was moved this turn. 
+
+\begin{DoxyReturn}{Returns}
+True if block was moved this turn, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_block_8h}{Block.\-h}\item 
+Block.\-cpp\end{DoxyCompactItemize}

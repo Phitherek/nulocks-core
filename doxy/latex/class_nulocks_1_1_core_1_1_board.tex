@@ -1,0 +1,198 @@
+\hypertarget{class_nulocks_1_1_core_1_1_board}{\section{Nulocks\-:\-:Core\-:\-:Board Class Reference}
+\label{class_nulocks_1_1_core_1_1_board}\index{Nulocks\-::\-Core\-::\-Board@{Nulocks\-::\-Core\-::\-Board}}
+}
+
+
+A class that represents \hyperlink{namespace_nulocks}{Nulocks} board.  
+
+
+
+
+{\ttfamily \#include $<$Board.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_nulocks_1_1_core_1_1_board_aade03ae0bbc41412df4bc7383fbd4ebc}{Board} (int size=4, int winpower=11)
+\begin{DoxyCompactList}\small\item\em Initializes the board for the new game. \end{DoxyCompactList}\item 
+\hypertarget{class_nulocks_1_1_core_1_1_board_a5d15ae6a1d3266b0cfea0d202d72d640}{\hyperlink{class_nulocks_1_1_core_1_1_board_a5d15ae6a1d3266b0cfea0d202d72d640}{$\sim$\-Board} ()}\label{class_nulocks_1_1_core_1_1_board_a5d15ae6a1d3266b0cfea0d202d72d640}
+
+\begin{DoxyCompactList}\small\item\em Destroys the board, frees the memory. \end{DoxyCompactList}\item 
+\hyperlink{class_nulocks_1_1_core_1_1_board_af47d4fed958c0136f59ca3295a84bb8c}{Board} (const \hyperlink{class_nulocks_1_1_core_1_1_board}{Board} \&cpy)
+\begin{DoxyCompactList}\small\item\em A copy constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_nulocks_1_1_core_1_1_board_a76553d38f8472170a2f1a7ae76f3a73f}{void \hyperlink{class_nulocks_1_1_core_1_1_board_a76553d38f8472170a2f1a7ae76f3a73f}{move\-Up} ()}\label{class_nulocks_1_1_core_1_1_board_a76553d38f8472170a2f1a7ae76f3a73f}
+
+\begin{DoxyCompactList}\small\item\em Performs a move upwards and starts new turn. \end{DoxyCompactList}\item 
+\hypertarget{class_nulocks_1_1_core_1_1_board_aa1952b950f9c0e69c971b3ab345a43a2}{void \hyperlink{class_nulocks_1_1_core_1_1_board_aa1952b950f9c0e69c971b3ab345a43a2}{move\-Down} ()}\label{class_nulocks_1_1_core_1_1_board_aa1952b950f9c0e69c971b3ab345a43a2}
+
+\begin{DoxyCompactList}\small\item\em Performs a move downwards and starts new turn. \end{DoxyCompactList}\item 
+\hypertarget{class_nulocks_1_1_core_1_1_board_a53c7b1172b6600be19f86cba2cdeb571}{void \hyperlink{class_nulocks_1_1_core_1_1_board_a53c7b1172b6600be19f86cba2cdeb571}{move\-Left} ()}\label{class_nulocks_1_1_core_1_1_board_a53c7b1172b6600be19f86cba2cdeb571}
+
+\begin{DoxyCompactList}\small\item\em Performs a move to the left and starts new turn. \end{DoxyCompactList}\item 
+\hypertarget{class_nulocks_1_1_core_1_1_board_a83294c8ca3e94e9409aad507ed81c78b}{void \hyperlink{class_nulocks_1_1_core_1_1_board_a83294c8ca3e94e9409aad507ed81c78b}{move\-Right} ()}\label{class_nulocks_1_1_core_1_1_board_a83294c8ca3e94e9409aad507ed81c78b}
+
+\begin{DoxyCompactList}\small\item\em Performs a move to the right and starts new turn. \end{DoxyCompactList}\item 
+bool \hyperlink{class_nulocks_1_1_core_1_1_board_a2b09be0742a2a27714190967e3e7cd82}{game\-In\-Progress} ()
+\begin{DoxyCompactList}\small\item\em Checks if game is in progress. \end{DoxyCompactList}\item 
+bool \hyperlink{class_nulocks_1_1_core_1_1_board_a34ebd6854e42bbe15fd24f27969ee4bd}{game\-Won} ()
+\begin{DoxyCompactList}\small\item\em Checks if game has been won. \end{DoxyCompactList}\item 
+bool \hyperlink{class_nulocks_1_1_core_1_1_board_a23dce584fcd089fef50f4ea58fb513e3}{game\-Lost} ()
+\begin{DoxyCompactList}\small\item\em Checks if game has been lost. \end{DoxyCompactList}\item 
+int \hyperlink{class_nulocks_1_1_core_1_1_board_a5108bbb1bad0da37d8cdad5219aed245}{get\-Score} ()
+\begin{DoxyCompactList}\small\item\em Returns the current score. \end{DoxyCompactList}\item 
+int \hyperlink{class_nulocks_1_1_core_1_1_board_a0138822cc860c8bb400e878f2dae6617}{get\-Win\-Power} ()
+\begin{DoxyCompactList}\small\item\em Returns the power of 2 required to win the game. \end{DoxyCompactList}\item 
+int \hyperlink{class_nulocks_1_1_core_1_1_board_a0e2d920142481d08f882a4a23f2389a4}{get\-Size} ()
+\begin{DoxyCompactList}\small\item\em Returns size of the board. \end{DoxyCompactList}\item 
+void \hyperlink{class_nulocks_1_1_core_1_1_board_ae7acd65ef0945fdaccf67678e09c6ee4}{get\-Representation} (int $\ast$$\ast$$\ast$repr)
+\begin{DoxyCompactList}\small\item\em Returns representation of the board as an array of integers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that represents \hyperlink{namespace_nulocks}{Nulocks} board. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_nulocks_1_1_core_1_1_board_aade03ae0bbc41412df4bc7383fbd4ebc}{\index{Nulocks\-::\-Core\-::\-Board@{Nulocks\-::\-Core\-::\-Board}!Board@{Board}}
+\index{Board@{Board}!Nulocks::Core::Board@{Nulocks\-::\-Core\-::\-Board}}
+\subsubsection[{Board}]{\setlength{\rightskip}{0pt plus 5cm}Nulocks\-::\-Core\-::\-Board\-::\-Board (
+\begin{DoxyParamCaption}
+\item[{int}]{size = {\ttfamily 4}, }
+\item[{int}]{winpower = {\ttfamily 11}}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_board_aade03ae0bbc41412df4bc7383fbd4ebc}
+
+
+Initializes the board for the new game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Size of the board, defaults to 4 as in original 2048. \\
+\hline
+{\em winpower} & Power of 2 to get to win the game. Defaults to 11, as in original 2048 game. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_nulocks_1_1_core_1_1_board_af47d4fed958c0136f59ca3295a84bb8c}{\index{Nulocks\-::\-Core\-::\-Board@{Nulocks\-::\-Core\-::\-Board}!Board@{Board}}
+\index{Board@{Board}!Nulocks::Core::Board@{Nulocks\-::\-Core\-::\-Board}}
+\subsubsection[{Board}]{\setlength{\rightskip}{0pt plus 5cm}Nulocks\-::\-Core\-::\-Board\-::\-Board (
+\begin{DoxyParamCaption}
+\item[{const {\bf Board} \&}]{cpy}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_board_af47d4fed958c0136f59ca3295a84bb8c}
+
+
+A copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cpy} & A \hyperlink{class_nulocks_1_1_core_1_1_board}{Board} object to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_nulocks_1_1_core_1_1_board_a2b09be0742a2a27714190967e3e7cd82}{\index{Nulocks\-::\-Core\-::\-Board@{Nulocks\-::\-Core\-::\-Board}!game\-In\-Progress@{game\-In\-Progress}}
+\index{game\-In\-Progress@{game\-In\-Progress}!Nulocks::Core::Board@{Nulocks\-::\-Core\-::\-Board}}
+\subsubsection[{game\-In\-Progress}]{\setlength{\rightskip}{0pt plus 5cm}bool Nulocks\-::\-Core\-::\-Board\-::game\-In\-Progress (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_board_a2b09be0742a2a27714190967e3e7cd82}
+
+
+Checks if game is in progress. 
+
+\begin{DoxyReturn}{Returns}
+True if game is in progress, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_nulocks_1_1_core_1_1_board_a23dce584fcd089fef50f4ea58fb513e3}{\index{Nulocks\-::\-Core\-::\-Board@{Nulocks\-::\-Core\-::\-Board}!game\-Lost@{game\-Lost}}
+\index{game\-Lost@{game\-Lost}!Nulocks::Core::Board@{Nulocks\-::\-Core\-::\-Board}}
+\subsubsection[{game\-Lost}]{\setlength{\rightskip}{0pt plus 5cm}bool Nulocks\-::\-Core\-::\-Board\-::game\-Lost (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_board_a23dce584fcd089fef50f4ea58fb513e3}
+
+
+Checks if game has been lost. 
+
+\begin{DoxyReturn}{Returns}
+True if game has been lost, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_nulocks_1_1_core_1_1_board_a34ebd6854e42bbe15fd24f27969ee4bd}{\index{Nulocks\-::\-Core\-::\-Board@{Nulocks\-::\-Core\-::\-Board}!game\-Won@{game\-Won}}
+\index{game\-Won@{game\-Won}!Nulocks::Core::Board@{Nulocks\-::\-Core\-::\-Board}}
+\subsubsection[{game\-Won}]{\setlength{\rightskip}{0pt plus 5cm}bool Nulocks\-::\-Core\-::\-Board\-::game\-Won (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_board_a34ebd6854e42bbe15fd24f27969ee4bd}
+
+
+Checks if game has been won. 
+
+\begin{DoxyReturn}{Returns}
+True if game has been won, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_nulocks_1_1_core_1_1_board_ae7acd65ef0945fdaccf67678e09c6ee4}{\index{Nulocks\-::\-Core\-::\-Board@{Nulocks\-::\-Core\-::\-Board}!get\-Representation@{get\-Representation}}
+\index{get\-Representation@{get\-Representation}!Nulocks::Core::Board@{Nulocks\-::\-Core\-::\-Board}}
+\subsubsection[{get\-Representation}]{\setlength{\rightskip}{0pt plus 5cm}void Nulocks\-::\-Core\-::\-Board\-::get\-Representation (
+\begin{DoxyParamCaption}
+\item[{int $\ast$$\ast$$\ast$}]{repr}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_board_ae7acd65ef0945fdaccf67678e09c6ee4}
+
+
+Returns representation of the board as an array of integers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em repr} & Takes address of a two-\/dimensional array of integers with the same size as the board. Returns integer representation of the board to this array. Memory allocation and freeing must be handled outside this method. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_nulocks_1_1_core_1_1_board_a5108bbb1bad0da37d8cdad5219aed245}{\index{Nulocks\-::\-Core\-::\-Board@{Nulocks\-::\-Core\-::\-Board}!get\-Score@{get\-Score}}
+\index{get\-Score@{get\-Score}!Nulocks::Core::Board@{Nulocks\-::\-Core\-::\-Board}}
+\subsubsection[{get\-Score}]{\setlength{\rightskip}{0pt plus 5cm}int Nulocks\-::\-Core\-::\-Board\-::get\-Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_board_a5108bbb1bad0da37d8cdad5219aed245}
+
+
+Returns the current score. 
+
+\begin{DoxyReturn}{Returns}
+Current score of the player. 
+\end{DoxyReturn}
+\hypertarget{class_nulocks_1_1_core_1_1_board_a0e2d920142481d08f882a4a23f2389a4}{\index{Nulocks\-::\-Core\-::\-Board@{Nulocks\-::\-Core\-::\-Board}!get\-Size@{get\-Size}}
+\index{get\-Size@{get\-Size}!Nulocks::Core::Board@{Nulocks\-::\-Core\-::\-Board}}
+\subsubsection[{get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Nulocks\-::\-Core\-::\-Board\-::get\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_board_a0e2d920142481d08f882a4a23f2389a4}
+
+
+Returns size of the board. 
+
+\begin{DoxyReturn}{Returns}
+Size of the board. 
+\end{DoxyReturn}
+\hypertarget{class_nulocks_1_1_core_1_1_board_a0138822cc860c8bb400e878f2dae6617}{\index{Nulocks\-::\-Core\-::\-Board@{Nulocks\-::\-Core\-::\-Board}!get\-Win\-Power@{get\-Win\-Power}}
+\index{get\-Win\-Power@{get\-Win\-Power}!Nulocks::Core::Board@{Nulocks\-::\-Core\-::\-Board}}
+\subsubsection[{get\-Win\-Power}]{\setlength{\rightskip}{0pt plus 5cm}int Nulocks\-::\-Core\-::\-Board\-::get\-Win\-Power (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_nulocks_1_1_core_1_1_board_a0138822cc860c8bb400e878f2dae6617}
+
+
+Returns the power of 2 required to win the game. 
+
+\begin{DoxyReturn}{Returns}
+Power of 2 to get to win the game. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_board_8h}{Board.\-h}\item 
+Board.\-cpp\end{DoxyCompactItemize}
