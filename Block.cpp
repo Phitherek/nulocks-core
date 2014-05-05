@@ -39,7 +39,7 @@ void Nulocks::Core::Block::levelUp() {
         if(_value == 0) {
                 _value = 2;
         } else {
-                _value = pow(_value, 2);
+                _value = _value*2;
         }
 }
 

@@ -1,5 +1,7 @@
 #include "Board.h"
 #include <cmath>
+#include <cstdlib>
+#include <iostream>
 
 Nulocks::Core::Board::Board(int size, int winpower) {
         _board = new Nulocks::Core::Block*[size];
@@ -103,7 +105,7 @@ void Nulocks::Core::Board::moveUp() {
                                 while(!done) {
                                         if(curx-1 < 0) {
                                                 done = true;
-                                        } else if(_board[curx-1][cury]).isEmpty()) {
+                                        } else if(_board[curx-1][cury].isEmpty()) {
                                                 _board[curx-1][cury].setLevel(_board[curx][cury].getLevel());
                                                 _board[curx][cury].empty();
                                                 curx--;
@@ -133,10 +135,10 @@ void Nulocks::Core::Board::moveDown() {
                                 while(!done) {
                                         if(curx+1 >= _size) {
                                                 done = true;
-                                        } else if(_board[curx+1][cury]).isEmpty()) {
+                                        } else if(_board[curx+1][cury].isEmpty()) {
                                                 _board[curx+1][cury].setLevel(_board[curx][cury].getLevel());
                                                 _board[curx][cury].empty();
-                                                curx--;
+                                                curx++;
                                         } else if(_board[curx+1][cury].getLevel() == _board[curx][cury].getLevel()) {
                                                 _board[curx+1][cury].levelUp();
                                                 _board[curx+1][cury].setMoved();
@@ -163,10 +165,10 @@ void Nulocks::Core::Board::moveLeft() {
                                 while(!done) {
                                         if(cury-1 < 0) {
                                                 done = true;
-                                        } else if(_board[curx][cury-1]).isEmpty()) {
+                                        } else if(_board[curx][cury-1].isEmpty()) {
                                                 _board[curx][cury-1].setLevel(_board[curx][cury].getLevel());
                                                 _board[curx][cury].empty();
-                                                curx--;
+                                                cury--;
                                         } else if(_board[curx][cury-1].getLevel() == _board[curx][cury].getLevel()) {
                                                 _board[curx][cury-1].levelUp();
                                                 _board[curx][cury-1].setMoved();
@@ -193,10 +195,10 @@ void Nulocks::Core::Board::moveRight() {
                                 while(!done) {
                                         if(cury+1 >= _size) {
                                                 done = true;
-                                        } else if(_board[curx][cury+1]).isEmpty()) {
+                                        } else if(_board[curx][cury+1].isEmpty()) {
                                                 _board[curx][cury+1].setLevel(_board[curx][cury].getLevel());
                                                 _board[curx][cury].empty();
-                                                curx--;
+                                                cury++;
                                         } else if(_board[curx][cury+1].getLevel() == _board[curx][cury].getLevel()) {
                                                 _board[curx][cury+1].levelUp();
                                                 _board[curx][cury+1].setMoved();
