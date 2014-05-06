@@ -83,11 +83,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><p>nulocks - NUmerical bLOCKS is a modular and customizable clone of 2048 game in C++. This is a repository with core engine of the game.</p>
 <p>The main purpose of <a class="el" href="namespace_nulocks.html" title="A global namespace for all Nulocks game components. ">Nulocks</a> is to provide an engine of a game similar to original 2048 and an option to visualize it in any interface you want to implement it in. This repository contains this very engine that can be used to implement 2048 and/or use extended <a class="el" href="namespace_nulocks.html" title="A global namespace for all Nulocks game components. ">Nulocks</a> possibilities such as determined by user size of the board and ending level of block in any user interface you want.</p>
-<p>If you want to contribute, start with the documentation at: <a href="http://www.phitherek.mooo.com/doxy/nulocks-core/">http://www.phitherek.mooo.com/doxy/nulocks-core/</a>. I would be happy to see <a class="el" href="namespace_nulocks.html" title="A global namespace for all Nulocks game components. ">Nulocks</a> implemented for many platforms in many graphical libraries. </p>
+<p>If you want to contribute, start with the documentation at: <a href="http://www.phitherek.mooo.com/doxy/nulocks-core/">http://www.phitherek.mooo.com/doxy/nulocks-core/</a>. I would be happy to see <a class="el" href="namespace_nulocks.html" title="A global namespace for all Nulocks game components. ">Nulocks</a> implemented for many platforms in many graphical libraries.</p>
+<h2>Installation </h2>
+<blockquote class="doxtable">
+<p>make</p>
+<p></p>
+</blockquote>
+<blockquote class="doxtable">
+<p>sudo make install</p>
+<p></p>
+</blockquote>
+<p>Make macros: LIBPREFIX - determines a directory in which the shared library should be placed, default: /usr/lib, INCLUDEPREFIX - determines a directory in which the header files should be placed, default: /usr/include. Use them with the install command.</p>
+<h2>Usage </h2>
+<p>In your program include the main header file:</p>
+<blockquote class="doxtable">
+<p>#include "nulocks-core/Board.h"</p>
+<p></p>
+</blockquote>
+<p>Compile your program with:</p>
+<blockquote class="doxtable">
+<p>g++ -o your_executable your_source.cpp -lnulockscore </p>
+</blockquote>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 5 2014 23:31:15 for nulocks-core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 6 2014 13:38:46 for nulocks-core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

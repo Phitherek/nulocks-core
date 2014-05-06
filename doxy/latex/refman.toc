@@ -37,4 +37,4 @@
 \contentsline {subsection}{\numberline {7.1.1}Detailed Description}{17}{subsection.7.1.1}
 \contentsline {section}{\numberline {7.2}Board.\discretionary {-}{}{}h File Reference}{17}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Detailed Description}{18}{subsection.7.2.1}
-\contentsline {part}{Index}{19}{section*.10}
+\contentsline {part}{Index}{19}{section*.12}

@@ -2,4 +2,35 @@ nulocks -\/ N\-Umerical b\-L\-O\-C\-K\-S is a modular and customizable clone of 
 
 The main purpose of \hyperlink{namespace_nulocks}{Nulocks} is to provide an engine of a game similar to original 2048 and an option to visualize it in any interface you want to implement it in. This repository contains this very engine that can be used to implement 2048 and/or use extended \hyperlink{namespace_nulocks}{Nulocks} possibilities such as determined by user size of the board and ending level of block in any user interface you want.
 
-If you want to contribute, start with the documentation at\-: \href{http://www.phitherek.mooo.com/doxy/nulocks-core/}{\tt http\-://www.\-phitherek.\-mooo.\-com/doxy/nulocks-\/core/}. I would be happy to see \hyperlink{namespace_nulocks}{Nulocks} implemented for many platforms in many graphical libraries. 
+If you want to contribute, start with the documentation at\-: \href{http://www.phitherek.mooo.com/doxy/nulocks-core/}{\tt http\-://www.\-phitherek.\-mooo.\-com/doxy/nulocks-\/core/}. I would be happy to see \hyperlink{namespace_nulocks}{Nulocks} implemented for many platforms in many graphical libraries.
+
+\subsection*{Installation }
+
+\begin{quotation}
+make
+
+\end{quotation}
+
+
+\begin{quotation}
+sudo make install
+
+\end{quotation}
+
+
+Make macros\-: L\-I\-B\-P\-R\-E\-F\-I\-X -\/ determines a directory in which the shared library should be placed, default\-: /usr/lib, I\-N\-C\-L\-U\-D\-E\-P\-R\-E\-F\-I\-X -\/ determines a directory in which the header files should be placed, default\-: /usr/include. Use them with the install command.
+
+\subsection*{Usage }
+
+In your program include the main header file\-:
+
+\begin{quotation}
+\#include \char`\"{}nulocks-\/core/\-Board.\-h\char`\"{}
+
+\end{quotation}
+
+
+Compile your program with\-:
+
+\begin{quotation}
+g++ -\/o your\-\_\-executable your\-\_\-source.\-cpp -\/lnulockscore \end{quotation}

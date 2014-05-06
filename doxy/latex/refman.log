@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.1.11)  5 MAY 2014 23:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.1.11)  6 MAY 2014 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1069,7 +1069,20 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 18.66588pt on input line 133.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 18.66588pt on input line 133.
-(./md__r_e_a_d_m_e.tex) [1
+(./md__r_e_a_d_m_e.tex
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
+ (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Overfull \hbox (58.31084pt too wide) in paragraph at lines 5--6
+[]\T1/phv/m/n/10 If you want to con-tribute, start with the doc-u-men-ta-tion a
+t-: [][]\T1/pcr/m/n/10 http-://www.-phitherek.-mooo.-com/doxy/nulocks-core/[][]
+\T1/phv/m/n/10 .
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 10.79993pt on input line 7.
+) [1
 
 
 ] [2
@@ -1096,8 +1109,6 @@ Chapter 4.
 ]
 Chapter 5.
 (./namespace_nulocks.tex
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 10.79993pt on input line 9.
 LaTeX Font Info:    Try loading font information for TS1+phv on input line 12.
  (/usr/share/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
@@ -1114,11 +1125,6 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 ]
 Chapter 6.
 (./class_nulocks_1_1_core_1_1_block.tex
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
-
-(/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 8.99994pt on input line 56.
  [11]
@@ -1233,7 +1239,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 7DD6BBBFBD4062ABD25E28F3CC081F8E;5807.
+(rerunfilecheck)             Checksum: 0210E23284B8A0F3AAE29BBC425D2C70;5807.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1241,13 +1247,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 12333 strings out of 493311
- 171486 string characters out of 6143650
+ 12335 strings out of 493311
+ 171508 string characters out of 6143650
  254528 words of memory out of 5000000
  15469 multiletter control sequences out of 15000+600000
  77788 words of font info for 106 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 48i,12n,43p,325b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,12n,43p,498b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.
@@ -1255,10 +1261,10 @@ pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texm
 f-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-dist/fonts/type1/
 urw/helvetic/uhvbo8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8
 a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (23 pages, 97217 bytes).
+Output written on refman.pdf (23 pages, 100736 bytes).
 PDF statistics:
- 501 PDF objects out of 1000 (max. 8388607)
- 463 compressed objects within 5 object streams
- 101 named destinations out of 1000 (max. 500000)
+ 508 PDF objects out of 1000 (max. 8388607)
+ 470 compressed objects within 5 object streams
+ 103 named destinations out of 1000 (max. 500000)
  321 words of extra memory for PDF output out of 10000 (max. 10000000)
 
