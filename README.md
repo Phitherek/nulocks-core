@@ -21,7 +21,7 @@ Usage
 
 In your program include the main header file:
 
-> #include "nulocks-core/Board.h"
+> \#include "nulocks-core/Board.h"
 
 Compile your program with:
 
