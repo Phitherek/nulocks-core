@@ -26,3 +26,9 @@ In your program include the main header file:
 Compile your program with:
 
 > g++ -o your_executable your_source.cpp -lnulockscore
+
+Changelog
+---------
+
+* v. 0.1 - Initial version of the engine.
+* v. 0.2 - Slightly changed game logic to reflect more of 2048 game' s logic.

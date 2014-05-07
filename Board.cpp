@@ -96,11 +96,11 @@ void Nulocks::Core::Board::startFirstTurn() {
 }
 
 void Nulocks::Core::Board::moveUp() {
-        for(int i = 0; i < _size; i++) {
-                for(int j = 0; j < _size; j++) {
+        for(int j = 0; j < _size; j++) {
+                for(int i = 0; i < _size; i++) {
                         int curx = i;
                         int cury = j;
-                        if(!_board[curx][cury].isEmpty() && !_board[curx][cury].wasMoved()) {
+                        if(!_board[curx][cury].isEmpty()) {
                                 bool done = false;
                                 while(!done) {
                                         if(curx-1 < 0) {
@@ -109,12 +109,11 @@ void Nulocks::Core::Board::moveUp() {
                                                 _board[curx-1][cury].setLevel(_board[curx][cury].getLevel());
                                                 _board[curx][cury].empty();
                                                 curx--;
-                                        } else if(_board[curx-1][cury].getLevel() == _board[curx][cury].getLevel()) {
+                                        } else if(_board[curx-1][cury].getLevel() == _board[curx][cury].getLevel() && !_board[curx][cury].wasMoved() && !_board[curx-1][cury].wasMoved()) {
                                                 _board[curx-1][cury].levelUp();
                                                 _board[curx-1][cury].setMoved();
                                                 _board[curx][cury].empty();
                                                 _score += _board[curx-1][cury].getValue();
-                                                done = true;
                                         } else {
                                                 done = true;
                                         }
@@ -126,11 +125,11 @@ void Nulocks::Core::Board::moveUp() {
 }
 
 void Nulocks::Core::Board::moveDown() {
-        for(int i = 0; i < _size; i++) {
-                for(int j = 0; j < _size; j++) {
+        for(int j = 0; j < _size; j++) {
+                for(int i = _size-1; i >= 0; i--) {
                         int curx = i;
                         int cury = j;
-                        if(!_board[curx][cury].isEmpty() && !_board[curx][cury].wasMoved()) {
+                        if(!_board[curx][cury].isEmpty()) {
                                 bool done = false;
                                 while(!done) {
                                         if(curx+1 >= _size) {
@@ -139,12 +138,11 @@ void Nulocks::Core::Board::moveDown() {
                                                 _board[curx+1][cury].setLevel(_board[curx][cury].getLevel());
                                                 _board[curx][cury].empty();
                                                 curx++;
-                                        } else if(_board[curx+1][cury].getLevel() == _board[curx][cury].getLevel()) {
+                                        } else if(_board[curx+1][cury].getLevel() == _board[curx][cury].getLevel() && !_board[curx][cury].wasMoved() && !_board[curx+1][cury].wasMoved()) {
                                                 _board[curx+1][cury].levelUp();
                                                 _board[curx+1][cury].setMoved();
                                                 _board[curx][cury].empty();
                                                 _score += _board[curx+1][cury].getValue();
-                                                done = true;
                                         } else {
                                                 done = true;
                                         }
@@ -156,8 +154,8 @@ void Nulocks::Core::Board::moveDown() {
 }
 
 void Nulocks::Core::Board::moveLeft() {
-        for(int j = 0; j < _size; j++) {
-                for(int i = 0; i < _size; i++) {
+        for(int i = 0; i < _size; i++) {
+                for(int j = 0; j < _size; j++) {
                         int curx = i;
                         int cury = j;
                         if(!_board[curx][cury].isEmpty() && !_board[curx][cury].wasMoved()) {
@@ -169,12 +167,11 @@ void Nulocks::Core::Board::moveLeft() {
                                                 _board[curx][cury-1].setLevel(_board[curx][cury].getLevel());
                                                 _board[curx][cury].empty();
                                                 cury--;
-                                        } else if(_board[curx][cury-1].getLevel() == _board[curx][cury].getLevel()) {
+                                        } else if(_board[curx][cury-1].getLevel() == _board[curx][cury].getLevel() && !_board[curx][cury].wasMoved() && !_board[curx][cury-1].wasMoved()) {
                                                 _board[curx][cury-1].levelUp();
                                                 _board[curx][cury-1].setMoved();
                                                 _board[curx][cury].empty();
                                                 _score += _board[curx][cury-1].getValue();
-                                                done = true;
                                         } else {
                                                 done = true;
                                         }
@@ -186,8 +183,8 @@ void Nulocks::Core::Board::moveLeft() {
 }
 
 void Nulocks::Core::Board::moveRight() {
-        for(int j = 0; j < _size; j++) {
-                for(int i = 0; i < _size; i++) {
+        for(int i = 0; i < _size; i++) {
+                for(int j = _size-1; j >= 0; j--) {
                         int curx = i;
                         int cury = j;
                         if(!_board[curx][cury].isEmpty() && !_board[curx][cury].wasMoved()) {
@@ -199,12 +196,11 @@ void Nulocks::Core::Board::moveRight() {
                                                 _board[curx][cury+1].setLevel(_board[curx][cury].getLevel());
                                                 _board[curx][cury].empty();
                                                 cury++;
-                                        } else if(_board[curx][cury+1].getLevel() == _board[curx][cury].getLevel()) {
+                                        } else if(_board[curx][cury+1].getLevel() == _board[curx][cury].getLevel() && !_board[curx][cury].wasMoved() && !_board[curx][cury+1].wasMoved()) {
                                                 _board[curx][cury+1].levelUp();
                                                 _board[curx][cury+1].setMoved();
                                                 _board[curx][cury].empty();
                                                 _score += _board[curx][cury+1].getValue();
-                                                done = true;
                                         } else {
                                                 done = true;
                                         }
