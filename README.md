@@ -32,3 +32,4 @@ Changelog
 
 * v. 0.1 - Initial version of the engine.
 * v. 0.2 - Slightly changed game logic to reflect more of 2048 game' s logic.
+* v. 0.2.1 - Makefile should generate library version 0.2 and not 0.1 (naming error resolved). Added uninstall action to Makefile.

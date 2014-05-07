@@ -2,18 +2,21 @@ LIBPREFIX=/usr/lib
 INCLUDEPREFIX=/usr/include
 all:
 	${CXX} -Wall -fPIC -c Block.cpp Board.cpp
-	${CXX} -shared -Wl,-soname,libnulockscore.so.0 -o libnulockscore.so.0.1 Block.o Board.o
+	${CXX} -shared -Wl,-soname,libnulockscore.so.0 -o libnulockscore.so.0.2 Block.o Board.o
 debug:
 	${CXX} -Wall -fPIC -c Block.cpp Board.cpp -g
-	${CXX} -shared -Wl,-soname,libnulockscore.so.0 -o libnulockscore.so.0.1 Block.o Board.o	
+	${CXX} -shared -Wl,-soname,libnulockscore.so.0 -o libnulockscore.so.0.2 Block.o Board.o	
 clean:
 	rm -rf libnulockscore.so.* *.o
 install:
-	cp -f libnulockscore.so.0.1 ${LIBPREFIX}
-	ln -sf ${LIBPREFIX}/libnulockscore.so.0.1 ${LIBPREFIX}/libnulockscore.so.0
-	ln -sf ${LIBPREFIX}/libnulockscore.so.0.1 ${LIBPREFIX}/libnulockscore.so
+	cp -f libnulockscore.so.0.2 ${LIBPREFIX}
+	ln -sf ${LIBPREFIX}/libnulockscore.so.0.2 ${LIBPREFIX}/libnulockscore.so.0
+	ln -sf ${LIBPREFIX}/libnulockscore.so.0.2 ${LIBPREFIX}/libnulockscore.so
 	mkdir -p ${INCLUDEPREFIX}/nulocks-core
 	cp -f *.h ${INCLUDEPREFIX}/nulocks-core
+uninstall:
+	rm -rf ${LIBPREFIX}/libnulockscore.*
+	rm -rf ${INCLUDEPREFIX}/nulocks-core
 testall:
 	${CXX} -o BlockTest BlockTest.cpp Block.cpp
 	${CXX} -o BoardTest BoardTest.cpp Board.cpp Block.cpp
